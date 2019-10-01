@@ -14,7 +14,7 @@ import static org.mockito.Mockito.when;
 
 public class TodoBussinessImplStubTest  {
     @Test
-    public void testTodoServiceRelatedToSpring_usingStub()
+    public void testTodoServiceRelatedToMasterSkills_usingStub()
     {
         // previously created a TodoService object with help of a stub class which implemented the interface
         TodoServiceStub todoService = new TodoServiceStub();
@@ -29,7 +29,7 @@ public class TodoBussinessImplStubTest  {
     }
 
     @Test
-    public void testTodoServiceRelatedToSpring_usingStub2()
+    public void testTodoServiceRelatedToMasterSkills_usingStub2()
     {
         TodoServiceStub todoService = new TodoServiceStub();
         TodoBussinessImpl todoBussiness = new TodoBussinessImpl(todoService);
