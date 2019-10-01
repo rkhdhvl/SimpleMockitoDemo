@@ -13,7 +13,7 @@ public class TodoBussinessImpl {
         this.todoService = todoService;
     }
 
-    public List<String> retrieveTodosRelatedToSpring(String user)
+    public List<String> retrieveTodosRelatedToMasterSkills(String user)
     {
       List<String> filteredTodos = new ArrayList<String>();
       List<String> todos = todoService.retrieveTodos(user);

@@ -24,7 +24,7 @@ public class TodoBussinessImplStubTest  {
         // writing the logic present inside a stub using when in mockito
         when(todoServiceUsingMock.retrieveTodos("Dragon Queen")).thenReturn(user1TodoList);
         TodoBussinessImpl todoBussiness = new TodoBussinessImpl(todoServiceUsingMock);
-        List<String> filteredTodos = todoBussiness.retrieveTodosRelatedToSpring("Dragon Queen");
+        List<String> filteredTodos = todoBussiness.retrieveTodosRelatedToMasterSkills("Dragon Queen");
         assertEquals(3,filteredTodos.size());
     }
 
@@ -33,7 +33,7 @@ public class TodoBussinessImplStubTest  {
     {
         TodoServiceStub todoService = new TodoServiceStub();
         TodoBussinessImpl todoBussiness = new TodoBussinessImpl(todoService);
-        List<String> filteredTodos = todoBussiness.retrieveTodosRelatedToSpring("Demo User");
+        List<String> filteredTodos = todoBussiness.retrieveTodosRelatedToMasterSkills("Demo User");
         assertEquals(2,filteredTodos.size());
     }
 
